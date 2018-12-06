@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <title>Scrabble score</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <script src="ScrabbleScore.js"></script>
+
+    <h1>Scrabble Score</h1>
+</head>
+<body>
+    <!--TABLE---->
+    <table style="width:75%">
+        <tr>
+            <th>Letter</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <th>A,E,I,O,U,L,N,R,S,T</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th>D,G</th>
+            <th>2</th>
+        </tr>
+        <tr>
+            <th>B,C,M,P</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <th>F,H,V,W,Y</th>
+            <th>4</th>
+        </tr>
+        <tr>
+            <th>K</th>
+            <th>5</th>
+        </tr>
+        <tr>
+            <th>J,X</th>
+            <th>8</th>
+        </tr>
+        <tr>
+            <th>Q,Z</th>
+            <th>10</th>
+        </tr>
+    </table>
+    <!--------INPUT TEXT---->
+    <label style="font-size: 20px;">Enter a word to compute the score:</label>
+    <input type="text" id="word1"></input></br>
+
+    <!--------BUTTON-------->
+    <button id="button" onclick="scrabbleScore(getElementById('word1').value)">Compute</button>
+
+    <!----RESULT------------>
+    <p style="text-align: left;"><label style="font-size: 20px;"></label>
+    <div id="result"></div></p>
+</body>
+</html>
